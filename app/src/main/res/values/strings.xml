@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DragCircleProgress</string>
+    <string name="delayTipStr1">滑动上部按钮调节时间</string>
+    <string name="delayTipStr2">点击取消执行</string>
+    <string name="delayTipStr3">松手执行延时</string>
+    <string name="delayTipStr4">设置延时关灯最大时间为6小时</string>
+</resources>
