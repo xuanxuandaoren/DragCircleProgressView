@@ -285,6 +285,7 @@ public class DragCircleProgress extends View {
             circleCount = mCurrentValue / mTotalValue;
             mTouchAngle = (mCurrentValue * 360 / mTotalValue) % 360;
             state = ON_COUNT;
+
             initThumb(true);
             isCount = true;
             startCountDown();
@@ -458,6 +459,8 @@ public class DragCircleProgress extends View {
 
                     mCurrentValue = systemTime - System.currentTimeMillis();
                     mTouchAngle = (mCurrentValue % mTotalValue) * 360 / mTotalValue;
+                    circleCount = mCurrentValue / mTotalValue;
+
                     if (mCurrentValue <= 0) {
                         mTouchAngle = 0;
                         isCount = false;
